@@ -17,29 +17,30 @@
         background-color: #f4f4f4;
     }
 
-    /* HEADER */
+    /* ===== HEADER ===== */
     header {
         width: 100%;
-        background-color: #1f1f1f;
-        color: white;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
-    /* TOP TITLE ROW */
+    /* ===== TOP TITLE BAR ===== */
     .top-bar {
-        padding: 20px 30px;
-        border-bottom: 1px solid #3a3a3a;
+        background-color: white;
+        padding: 0.8vw 2vw;
+        border-bottom: 1px solid #d0d0d0;
     }
 
     .site-title {
-        font-size: 2.2rem;
+        color: black;
+        font-size: clamp(1.4rem, 2.2vw, 2.2rem);
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
 
-    /* NAVIGATION ROW */
+    /* ===== NAVIGATION BAR ===== */
     nav {
         width: 100%;
+        background-color: #4a2f21; /* dark brown */
     }
 
     .nav-menu {
@@ -52,61 +53,77 @@
         position: relative;
         flex: 1;
         text-align: center;
-        background-color: #2b2b2b;
-        transition: background-color 0.25s ease;
     }
 
     .nav-item > a {
         display: block;
-        padding: 16px 10px;
         color: white;
         text-decoration: none;
-        font-size: 1rem;
-        transition: all 0.25s ease;
-    }
-
-    .nav-item:hover {
-        background-color: #404040;
+        padding: 0.9vw 0.3vw;
+        font-size: clamp(0.72rem, 1vw, 1rem);
+        white-space: nowrap;
+        transition: background-color 0.25s ease,
+                    color 0.25s ease;
     }
 
     .nav-item > a:hover {
-        color: #87c7ff;
+        background-color: #6a4532;
+        color: #f0d2b4;
     }
 
-    /* DROPDOWN */
+    /* ===== DROPDOWN MENUS ===== */
     .dropdown {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #5a3929;
         display: none;
         flex-direction: column;
         z-index: 1000;
-        border-top: 1px solid #555;
+        min-width: 100%;
     }
 
     .dropdown a {
-        padding: 12px;
         color: white;
         text-decoration: none;
-        border-bottom: 1px solid #444;
+        padding: 0.75vw 0.5vw;
+        font-size: clamp(0.68rem, 0.95vw, 0.95rem);
+        border-top: 1px solid rgba(255,255,255,0.08);
         transition: background-color 0.2s ease,
                     color 0.2s ease,
                     padding-left 0.2s ease;
     }
 
     .dropdown a:hover {
-        background-color: #4c4c4c;
-        color: #87c7ff;
-        padding-left: 18px;
+        background-color: #7a513b;
+        color: #ffe4c7;
+        padding-left: 0.9vw;
     }
 
     .nav-item:hover .dropdown {
         display: flex;
     }
 
-    /* Optional page spacing */
+    /* ===== MOBILE SCALING ===== */
+    @media (max-width: 700px) {
+
+        .top-bar {
+            padding: 10px 14px;
+        }
+
+        .nav-item > a {
+            font-size: 0.65rem;
+            padding: 10px 2px;
+        }
+
+        .dropdown a {
+            font-size: 0.62rem;
+            padding: 9px 4px;
+        }
+    }
+
+    /* Optional content */
     main {
         padding: 40px;
     }
@@ -117,9 +134,9 @@
 
 <header>
 
-    <!-- TOP TITLE -->
+    <!-- TITLE BAR -->
     <div class="top-bar">
-        <div class="site-title">MetroArchives</div>
+        <div class="site-title">MetroArchive</div>
     </div>
 
     <!-- NAVIGATION -->
@@ -169,7 +186,7 @@
 </header>
 
 <main>
-    <h1>Metro Archive TBD</h1>
+    <h1>Welcome to MetroArchives</h1>
 </main>
 
 </body>
