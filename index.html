@@ -25,9 +25,9 @@
 
     /* ===== TOP TITLE BAR ===== */
     .top-bar {
-        background-color: #d9d9d9; /* light silver */
+        background-color: #cdcfcfff;
         padding: 0.65vw 2vw;
-        border-bottom: 1px solid #bdbdbd;
+        border-bottom: 1px solid #b6b8b8;
     }
 
     .site-title {
@@ -40,7 +40,7 @@
     /* ===== NAVIGATION BAR ===== */
     nav {
         width: 100%;
-        background-color: #24150f;
+        background-color: #422c24ff;
     }
 
     .nav-menu {
@@ -54,7 +54,7 @@
         flex: 1;
     }
 
-    /* perfectly centered text */
+    /* Main nav buttons */
     .nav-item > a {
         display: flex;
         align-items: center;
@@ -79,8 +79,8 @@
     }
 
     .nav-item > a:hover {
-        background-color: #3a241b;
-        color: #f3dbc7;
+        background-color: #5a3d33;
+        color: #f1ddd3;
     }
 
     /* ===== DROPDOWNS ===== */
@@ -96,7 +96,7 @@
 
         width: 100%;
 
-        background-color: #2e1b13;
+        background-color: #53372d;
 
         display: none;
         flex-direction: column;
@@ -108,14 +108,19 @@
         position: relative;
     }
 
+    /* Centered submenu text */
     .dropdown a,
     .submenu a {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
 
         color: white;
         text-decoration: none;
 
-        padding: 0.7vw 0.6vw;
+        padding: 0.72vw 0.5vw;
 
         font-size: clamp(0.72rem, 0.95vw, 0.95rem);
         font-weight: 600;
@@ -124,15 +129,13 @@
 
         transition:
             background-color 0.2s ease,
-            color 0.2s ease,
-            padding-left 0.2s ease;
+            color 0.2s ease;
     }
 
     .dropdown a:hover,
     .submenu a:hover {
-        background-color: #493025;
-        color: #ffe7d1;
-        padding-left: 0.95vw;
+        background-color: #6a473b;
+        color: #fff0e8;
     }
 
     .nav-item:hover > .dropdown {
@@ -145,9 +148,10 @@
         top: 0;
         left: 100%;
 
-        min-width: 180px;
+        /* same width as nav columns */
+        width: 100%;
 
-        background-color: #352118;
+        background-color: #624137;
 
         display: none;
 
@@ -174,10 +178,6 @@
         .submenu a {
             font-size: 0.66rem;
             padding: 8px 4px;
-        }
-
-        .submenu {
-            min-width: 140px;
         }
     }
 
@@ -214,7 +214,7 @@
                     </li>
 
                     <li class="has-submenu">
-                        <a href="#">Fleet ▸</a>
+                        <a href="#">Fleet</a>
 
                         <ul class="submenu">
                             <li><a href="#">1000-Series</a></li>
