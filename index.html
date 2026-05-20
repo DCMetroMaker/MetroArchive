@@ -148,7 +148,6 @@
         top: 0;
         left: 100%;
 
-        /* same width as nav columns */
         width: 100%;
 
         background-color: #624137;
@@ -160,6 +159,19 @@
 
     .has-submenu:hover > .submenu {
         display: block;
+    }
+
+    /* ===== LOWER HEADER STRIP ===== */
+    .bottom-strip {
+        width: 100%;
+        background-color: #cdcfcfff;
+
+        /* about 1/4 the height of nav bar */
+        height: 0.9vw;
+        min-height: 6px;
+        max-height: 12px;
+
+        border-top: 1px solid #b6b8b8;
     }
 
     /* ===== MOBILE ===== */
@@ -178,6 +190,10 @@
         .submenu a {
             font-size: 0.66rem;
             padding: 8px 4px;
+        }
+
+        .bottom-strip {
+            height: 6px;
         }
     }
 
@@ -263,6 +279,9 @@
 
         </ul>
     </nav>
+
+    <!-- LOWER STRIP -->
+    <div class="bottom-strip"></div>
 
 </header>
 
