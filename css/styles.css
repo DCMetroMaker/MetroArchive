@@ -17,7 +17,7 @@ header {
 
 /* ===== TOP TITLE BAR ===== */
 .top-bar {
-    background-color: #cdcfcfff;
+    background-color: #b2b6b6ff;
     padding: 0.65vw 2vw;
     border-bottom: 1px solid #b6b8b8;
 }
@@ -151,7 +151,7 @@ nav {
 /* ===== LOWER STRIP ===== */
 .bottom-strip {
     width: 100%;
-    background-color: #cdcfcfff;
+    background-color: #b2b6b6ff;
 
     height: 0.9vw;
     min-height: 6px;
