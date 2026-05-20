@@ -55,33 +55,40 @@
     }
 
     /* Main nav buttons */
-    .nav-item > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-
-        color: white;
-        text-decoration: none;
-
-        padding: 0.58vw 0.2vw;
-
-        font-size: clamp(0.82rem, 1.08vw, 1.08rem);
-        font-weight: 700;
-
-        white-space: nowrap;
-
-        transition:
-            background-color 0.2s ease,
-            color 0.2s ease;
-    }
-
-    .nav-item > a:hover {
-        background-color: #5a3d33;
-        color: #f1ddd3;
-    }
+   .nav-item > a {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   
+       width: 100%;
+       height: 100%;
+   
+       color: white;
+       text-decoration: none;
+   
+       padding: 0.58vw 0.2vw;
+   
+       font-size: clamp(0.82rem, 1.08vw, 1.08rem);
+       font-weight: 700;
+   
+       white-space: nowrap;
+   
+       transition:
+           background-color 0.2s ease,
+           color 0.2s ease;
+   }
+   
+   /* Hover effect */
+   .nav-item > a:hover {
+       background-color: #6a473b;
+       color: #fff0e8;
+   }
+   
+   /* KEEP MAIN TAB HIGHLIGHTED WHILE DROPDOWN IS OPEN */
+   .nav-item:hover > a {
+       background-color: #6a473b;
+       color: #fff0e8;
+   }
 
     /* ===== DROPDOWNS ===== */
    .dropdown,
