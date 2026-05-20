@@ -84,82 +84,87 @@
     }
 
     /* ===== DROPDOWNS ===== */
-    .dropdown,
-    .submenu {
-        list-style: none;
-    }
+   .dropdown,
+   .submenu {
+       list-style: none;
+   }
+   
+   .dropdown {
+       position: absolute;
+       top: 100%;
+       left: 0;
+   
+       width: 100%;
+   
+       /* SAME COLOR AS MAIN NAV BAR */
+       background-color: #422c24ff;
+   
+       display: none;
+       flex-direction: column;
+   
+       z-index: 1000;
+   }
+   
+   .dropdown li {
+       position: relative;
+   }
+   
+   /* Centered submenu text */
+   .dropdown a,
+   .submenu a {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   
+       text-align: center;
+   
+       color: white;
+       text-decoration: none;
+   
+       padding: 0.72vw 0.5vw;
+   
+       font-size: clamp(0.72rem, 0.95vw, 0.95rem);
+       font-weight: 600;
+   
+       border-top: 1px solid rgba(255,255,255,0.08);
+   
+       transition:
+           background-color 0.2s ease,
+           color 0.2s ease;
+   }
+   
+   /* ONLY CHANGE COLOR WHEN HOVERED */
+   .dropdown a:hover,
+   .submenu a:hover,
+   .has-submenu:hover > a {
+       background-color: #6a473b;
+       color: #fff0e8;
+   }
+   
+   .nav-item:hover > .dropdown {
+       display: flex;
+   }
+   
+   /* ===== SECOND-LEVEL SUBMENU ===== */
+   .submenu {
+       position: absolute;
+       top: 0;
+       left: 100%;
+   
+       width: 100%;
+   
+       /* SAME BROWN AS MAIN BAR */
+       background-color: #422c24ff;
+   
+       display: none;
+   
+       z-index: 1100;
+   }
+   
+   .has-submenu:hover > .submenu {
+       display: block;
+   }
 
-    .dropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        background-color: #53372d;
-
-        display: none;
-        flex-direction: column;
-
-        z-index: 1000;
-    }
-
-    .dropdown li {
-        position: relative;
-    }
-
-    /* Centered submenu text */
-    .dropdown a,
-    .submenu a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
-
-        color: white;
-        text-decoration: none;
-
-        padding: 0.72vw 0.5vw;
-
-        font-size: clamp(0.72rem, 0.95vw, 0.95rem);
-        font-weight: 600;
-
-        border-top: 1px solid rgba(255,255,255,0.08);
-
-        transition:
-            background-color 0.2s ease,
-            color 0.2s ease;
-    }
-
-    .dropdown a:hover,
-    .submenu a:hover {
-        background-color: #6a473b;
-        color: #fff0e8;
-    }
-
-    .nav-item:hover > .dropdown {
-        display: flex;
-    }
-
-    /* ===== SECOND-LEVEL SUBMENU ===== */
-    .submenu {
-        position: absolute;
-        top: 0;
-        left: 100%;
-
-        width: 100%;
-
-        background-color: #624137;
-
-        display: none;
-
-        z-index: 1100;
-    }
-
-    .has-submenu:hover > .submenu {
-        display: block;
-    }
 
     /* ===== LOWER HEADER STRIP ===== */
     .bottom-strip {
