@@ -25,9 +25,9 @@
 
     /* ===== TOP TITLE BAR ===== */
     .top-bar {
-        background-color: white;
+        background-color: #d9d9d9; /* light silver */
         padding: 0.65vw 2vw;
-        border-bottom: 1px solid #d6d6d6;
+        border-bottom: 1px solid #bdbdbd;
     }
 
     .site-title {
@@ -40,7 +40,7 @@
     /* ===== NAVIGATION BAR ===== */
     nav {
         width: 100%;
-        background-color: #24150f; /* darker brown */
+        background-color: #24150f;
     }
 
     .nav-menu {
@@ -52,18 +52,22 @@
     .nav-item {
         position: relative;
         flex: 1;
-        text-align: center;
     }
 
+    /* perfectly centered text */
     .nav-item > a {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
         color: white;
         text-decoration: none;
 
-        /* thinner bar */
         padding: 0.58vw 0.2vw;
 
-        /* slightly larger bold font */
         font-size: clamp(0.82rem, 1.08vw, 1.08rem);
         font-weight: 700;
 
@@ -80,22 +84,38 @@
     }
 
     /* ===== DROPDOWNS ===== */
+    .dropdown,
+    .submenu {
+        list-style: none;
+    }
+
     .dropdown {
         position: absolute;
         top: 100%;
         left: 0;
+
         width: 100%;
+
         background-color: #2e1b13;
+
         display: none;
         flex-direction: column;
+
         z-index: 1000;
     }
 
-    .dropdown a {
+    .dropdown li {
+        position: relative;
+    }
+
+    .dropdown a,
+    .submenu a {
+        display: block;
+
         color: white;
         text-decoration: none;
 
-        padding: 0.7vw 0.5vw;
+        padding: 0.7vw 0.6vw;
 
         font-size: clamp(0.72rem, 0.95vw, 0.95rem);
         font-weight: 600;
@@ -108,14 +128,34 @@
             padding-left 0.2s ease;
     }
 
-    .dropdown a:hover {
+    .dropdown a:hover,
+    .submenu a:hover {
         background-color: #493025;
         color: #ffe7d1;
-        padding-left: 0.9vw;
+        padding-left: 0.95vw;
     }
 
-    .nav-item:hover .dropdown {
+    .nav-item:hover > .dropdown {
         display: flex;
+    }
+
+    /* ===== SECOND-LEVEL SUBMENU ===== */
+    .submenu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        min-width: 180px;
+
+        background-color: #352118;
+
+        display: none;
+
+        z-index: 1100;
+    }
+
+    .has-submenu:hover > .submenu {
+        display: block;
     }
 
     /* ===== MOBILE ===== */
@@ -130,9 +170,14 @@
             padding: 8px 2px;
         }
 
-        .dropdown a {
+        .dropdown a,
+        .submenu a {
             font-size: 0.66rem;
             padding: 8px 4px;
+        }
+
+        .submenu {
+            min-width: 140px;
         }
     }
 
@@ -148,7 +193,7 @@
 
     <!-- TITLE BAR -->
     <div class="top-bar">
-        <div class="site-title">MetroArchives</div>
+        <div class="site-title">MetroArchive</div>
     </div>
 
     <!-- NAVIGATION -->
@@ -162,22 +207,46 @@
             <li class="nav-item">
                 <a href="#">Rolling Stock</a>
 
-                <div class="dropdown">
-                    <a href="#">Image Rosters</a>
-                    <a href="#">Fleet</a>
-                    <a href="#">Mockups</a>
-                    <a href="#">Work Vehicles</a>
-                </div>
+                <ul class="dropdown">
+
+                    <li>
+                        <a href="#">Image Rosters</a>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">Fleet ▸</a>
+
+                        <ul class="submenu">
+                            <li><a href="#">1000-Series</a></li>
+                            <li><a href="#">2000-Series</a></li>
+                            <li><a href="#">3000-Series</a></li>
+                            <li><a href="#">4000-Series</a></li>
+                            <li><a href="#">5000-Series</a></li>
+                            <li><a href="#">6000-Series</a></li>
+                            <li><a href="#">7000-Series</a></li>
+                            <li><a href="#">8000-Series</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Mockups</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Work Vehicles</a>
+                    </li>
+
+                </ul>
             </li>
 
             <li class="nav-item">
                 <a href="#">System</a>
 
-                <div class="dropdown">
-                    <a href="#">Stations</a>
-                    <a href="#">Yards</a>
-                    <a href="#">Other</a>
-                </div>
+                <ul class="dropdown">
+                    <li><a href="#">Stations</a></li>
+                    <li><a href="#">Yards</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
             </li>
 
             <li class="nav-item">
