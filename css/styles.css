@@ -72,6 +72,155 @@ hr{
 }
 
 
+/* CENTERED IMAGE */
+.image-center {
+    width: 100%;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    text-align: center;
+}
+
+.image-center img {
+    width: 100%;
+    max-width: 850px;
+
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+}
+
+.image-center figcaption {
+    font-size: 1em;
+
+    color: #6f6f6f;
+
+    margin-top: 0.7em;
+
+    line-height: 1.7;
+}
+
+
+
+/* ====================================================== */
+/* SIDE IMAGE LAYOUTS */
+/* ====================================================== */
+
+.media-left,
+.media-right {
+    display: flex;
+
+    gap: 28px;
+
+    align-items: flex-start;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.media-left img,
+.media-right img {
+    width: 420px;
+
+    max-width: 42%;
+
+    height: auto;
+
+    flex-shrink: 0;
+}
+
+.media-text {
+    flex: 1;
+}
+
+
+
+/* ====================================================== */
+/* CHART GRID */
+/* ====================================================== */
+
+.chart-grid {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.chart-grid th,
+.chart-grid td {
+    border: 1px solid #c9c9c9;
+
+    padding: 12px 14px;
+
+    text-align: left;
+
+    font-size: 1em;
+
+    line-height: 1.7;
+}
+
+.chart-grid th {
+    background-color: #d8d8d8;
+
+    font-weight: bold;
+
+    color: black;
+}
+
+.chart-grid td {
+    background-color: white;
+
+    color: black;
+}
+
+
+
+/* ====================================================== */
+/* MOBILE RESPONSIVE */
+/* ====================================================== */
+
+@media (max-width: 850px) {
+
+    .media-left,
+    .media-right {
+        flex-direction: column;
+    }
+
+    .media-left img,
+    .media-right img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===== HEADER ===== */
