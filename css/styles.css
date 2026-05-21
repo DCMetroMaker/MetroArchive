@@ -53,10 +53,12 @@ main li{
     color: black;
     margin-bottom: 0.1em;
     line-height: 1.7;
+    position: relative;
+    margin-bottom: 6px;
 }
 
 main li::before {
-    content: "-";
+    content: "- ";
     position: absolute;
     left: -16px;
     color: black;
