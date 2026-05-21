@@ -160,6 +160,71 @@ nav {
     border-top: 1px solid #b6b8b8;
 }
 
+/* ===== STICKY HEADER ===== */
+
+#site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Smooth transition elements */
+nav,
+.bottom-strip {
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease,
+        padding 0.35s ease;
+}
+
+/* Expanded state */
+nav {
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.bottom-strip {
+    overflow: hidden;
+}
+
+/* ===== SCROLLED STATE ===== */
+
+#site-header.scrolled nav {
+    max-height: 0;
+    opacity: 0;
+
+    transform: translateY(-10px);
+
+    pointer-events: none;
+}
+
+#site-header.scrolled .bottom-strip {
+    max-height: 0;
+    opacity: 0;
+
+    transform: translateY(-8px);
+
+    border: none;
+}
+
+/* Slightly tighter title bar while scrolled */
+#site-header.scrolled .top-bar {
+    padding-top: 0.45vw;
+    padding-bottom: 0.45vw;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Optional: slightly smaller title */
+#site-header.scrolled .site-title {
+    font-size: clamp(1.3rem, 1.9vw, 2rem);
+}
+
 main {
     padding: 40px;
 }
