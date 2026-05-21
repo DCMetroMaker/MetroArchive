@@ -41,20 +41,19 @@ p{
 
 main ul{
     list-style: none;
-    padding-left: 2.0em;
+    padding-left: 1.8em;
 }
 
 main ul ul{
-    padding-left: 2.0em;
+    padding-left: 1.8em;
 }
 
 main li{
     font-size: 1.0em;
     color: black;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.5em;
     line-height: 1.7;
     position: relative;
-    margin-bottom: 6px;
 }
 
 main li::before {
