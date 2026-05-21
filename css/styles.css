@@ -182,25 +182,36 @@ nav,
         padding 0.35s ease;
 }
 
-/* Expanded state */
-nav {
-    max-height: 80px;
-    overflow: hidden;
-}
-
 .bottom-strip {
     overflow: hidden;
 }
 
 /* ===== SCROLLED STATE ===== */
 
-#site-header.scrolled nav {
+.top-bar {
+    transition:
+        max-height 0.35s ease,
+        padding 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease;
+
+    overflow: hidden;
+
+    max-height: 120px;
+}
+
+/* Collapse only top gray section */
+#site-header.scrolled .top-bar {
     max-height: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
     opacity: 0;
 
-    transform: translateY(-10px);
+    transform: translateY(-12px);
 
-    pointer-events: none;
+    border-bottom: none;
 }
 
 #site-header.scrolled .bottom-strip {
