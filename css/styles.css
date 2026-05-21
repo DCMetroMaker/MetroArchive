@@ -11,25 +11,25 @@ body {
 
 /* Font Styles */
 h1{
-    font-size: 2.0em;
+    font-size: 1.8em;
     color:black;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 h2{
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: black;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+    margin-top: 0.65em;
+    margin-bottom: 0.65em;
 }
 
 h3{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: none;
     color: black;
-    margin-top: 0.9em;
-    margin-bottom: 0.9em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
 }
 
 p{
@@ -62,7 +62,7 @@ main li::before {
     position: absolute;
     left: -16px;
     color: black;
-    font-weight: 600;
+    font-weight: none;
 }
 
 hr{
@@ -70,6 +70,8 @@ hr{
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
+
 
 
 /* ===== HEADER ===== */
