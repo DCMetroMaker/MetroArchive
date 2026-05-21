@@ -39,6 +39,16 @@ p{
     line-height: 1.7;
 }
 
+ul{
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+ul ul{
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 hr{
     color: black;
     margin-top: 2em;
@@ -277,5 +287,5 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: 26px 30px;
 }
