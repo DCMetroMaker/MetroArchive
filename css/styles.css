@@ -84,7 +84,12 @@ hr{
 
 .image-center img {
     width: 100%;
+
     max-width: 850px;
+
+    max-height: 520px;
+
+    object-fit: contain;
 
     height: auto;
 
@@ -121,15 +126,36 @@ hr{
     margin-bottom: 1em;
 }
 
-.media-left img,
-.media-right img {
+/* ====================================================== */
+/* SIDE IMAGE FIGURES */
+/* ====================================================== */
+
+.media-figure {
     width: 420px;
 
     max-width: 42%;
 
+    flex-shrink: 0;
+}
+
+.media-figure img {
+    width: 100%;
+
     height: auto;
 
-    flex-shrink: 0;
+    display: block;
+}
+
+.media-figure figcaption {
+    font-size: 1em;
+
+    color: #6f6f6f;
+
+    margin-top: 0.7em;
+
+    line-height: 1.7;
+
+    text-align: center;
 }
 
 .media-text {
