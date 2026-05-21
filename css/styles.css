@@ -51,14 +51,14 @@ main ul ul{
 main li{
     font-size: 1.0em;
     color: black;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
     line-height: 1.7;
 }
 
 main li::before {
     content: "-";
     position: absolute;
-    left: -0.5em;
+    left: -16px;
     color: black;
     font-weight: 600;
 }
