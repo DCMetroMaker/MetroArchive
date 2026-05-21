@@ -9,6 +9,35 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Font Styles */
+h1{
+    font-size: 1.5em;
+    color:black;
+    margin-top: 2px;
+}
+
+h2{
+    font-size: 1.2em;
+    color: black;
+}
+
+h3{
+    font-size: 1.0em;
+    color: black;
+}
+
+p{
+    font-size: 1.0em;
+    color: black;
+}
+
+hr{
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
 /* ===== HEADER ===== */
 header {
     width: 100%;
@@ -238,10 +267,7 @@ nav,
 
 main {
     width: 100%;
-
     max-width: 1200px;
-
     margin: 0 auto;
-
-    padding: 40px 24px;
+    padding: 50px 20px;
 }
