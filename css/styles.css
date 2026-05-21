@@ -11,7 +11,7 @@ body {
 
 /* Font Styles */
 h1{
-    font-size: 1.8em;
+    font-size: 2.0em;
     color:black;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -20,29 +20,29 @@ h1{
 h2{
     font-size: 1.4em;
     color: black;
-    margin-top: 0.7em;
-    margin-bottom: 0.7em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 h3{
     font-size: 1.2em;
     font-weight: none;
     color: black;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
 }
 
 p{
     font-size: 1.0em;
     color: black;
     margin-bottom: 0.5em;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 hr{
     color: black;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 
@@ -277,5 +277,5 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 20px 30px;
 }
