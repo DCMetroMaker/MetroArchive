@@ -40,13 +40,27 @@ p{
 }
 
 main ul{
+    list-style: none;
     padding-left: 2.0em;
-    margin-bottom: 0.5em;
 }
 
 main ul ul{
     padding-left: 2.0em;
+}
+
+main li{
+    font-size: 1.0em;
+    color: black;
     margin-bottom: 0.5em;
+    line-height: 1.7;
+}
+
+main li::before {
+    content: "-";
+    position: absolute;
+    left: -0.5em;
+    color: black;
+    font-weight: 600;
 }
 
 hr{
