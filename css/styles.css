@@ -166,49 +166,25 @@ nav {
     position: sticky;
     top: 0;
     z-index: 5000;
+
+    overflow: hidden;
 }
 
-/* Smooth transitions */
-.top-bar,
-.bottom-strip {
-    transition:
-        max-height 0.35s ease,
-        opacity 0.3s ease,
-        padding 0.35s ease,
-        transform 0.35s ease;
+/* Wrapper for animated sections */
+.header-upper {
+    transition: transform 0.35s ease;
+    will-change: transform;
 }
 
-/* Keep nav ALWAYS visible */
+/* Scroll state */
+#site-header.scrolled .header-upper {
+    transform: translateY(calc(-100% + 100%));
+}
+
+/* Keep nav locked above page content */
 nav {
     position: relative;
     z-index: 5001;
-}
-
-/* ===== SCROLLED STATE ===== */
-
-/* Hide top gray bar */
-#site-header.scrolled .top-bar {
-    max-height: 0;
-    opacity: 0;
-
-    padding-top: 0;
-    padding-bottom: 0;
-
-    overflow: hidden;
-
-    transform: translateY(-100%);
-}
-
-/* Hide bottom strip */
-#site-header.scrolled .bottom-strip {
-    max-height: 0;
-    opacity: 0;
-
-    overflow: hidden;
-
-    transform: translateY(-100%);
-
-    border: none;
 }
 
 main {
