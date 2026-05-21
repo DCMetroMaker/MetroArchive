@@ -166,63 +166,49 @@ nav {
     position: sticky;
     top: 0;
     z-index: 5000;
-
-    transition:
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
 }
 
-/* Smooth transition elements */
-nav,
+/* Smooth transitions */
+.top-bar,
 .bottom-strip {
     transition:
         max-height 0.35s ease,
-        opacity 0.25s ease,
-        transform 0.35s ease,
-        padding 0.35s ease;
+        opacity 0.3s ease,
+        padding 0.35s ease,
+        transform 0.35s ease;
 }
 
-/* Expanded state */
+/* Keep nav ALWAYS visible */
 nav {
-    max-height: 80px;
-    overflow: hidden;
-}
-
-.bottom-strip {
-    overflow: hidden;
+    position: relative;
+    z-index: 5001;
 }
 
 /* ===== SCROLLED STATE ===== */
 
-#site-header.scrolled nav {
+/* Hide top gray bar */
+#site-header.scrolled .top-bar {
     max-height: 0;
     opacity: 0;
 
-    transform: translateY(-10px);
+    padding-top: 0;
+    padding-bottom: 0;
 
-    pointer-events: none;
+    overflow: hidden;
+
+    transform: translateY(-100%);
 }
 
+/* Hide bottom strip */
 #site-header.scrolled .bottom-strip {
     max-height: 0;
     opacity: 0;
 
-    transform: translateY(-8px);
+    overflow: hidden;
+
+    transform: translateY(-100%);
 
     border: none;
-}
-
-/* Slightly tighter title bar while scrolled */
-#site-header.scrolled .top-bar {
-    padding-top: 0.45vw;
-    padding-bottom: 0.45vw;
-
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-}
-
-/* Optional: slightly smaller title */
-#site-header.scrolled .site-title {
-    font-size: clamp(1.3rem, 1.9vw, 2rem);
 }
 
 main {
