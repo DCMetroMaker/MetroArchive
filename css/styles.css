@@ -31,10 +31,17 @@ h2{
 
 h3{
     font-size: 1.3em;
-    font-weight: none;
     color: black;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
+}
+
+h4{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: black;
+    margin-top: 0.65em;
+    margin-bottom: 0.65em;
 }
 
 p{
