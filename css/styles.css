@@ -335,6 +335,15 @@ hr{
         grid-template-columns: 1fr;
     }
 
+    .media-figure {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .media-figure img {
+        width: 100%;
+    }
+
 }
 
 
