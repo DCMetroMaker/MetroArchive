@@ -344,6 +344,10 @@ hr{
         width: 100%;
     }
 
+    .media-right {
+        flex-direction: column-reverse;
+    }
+
 }
 
 
