@@ -71,15 +71,15 @@ main li::before {
 }
 
 main a {
-    color: #77402c;
+    color: #954f35;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 main a:hover {
-    color: #127ed3;
-    text-decoration-color: #127ed3;
+    color: #1989a1;
+    text-decoration-color: #1989a1;
 }
 
 hr{
