@@ -70,6 +70,18 @@ main li::before {
     font-weight: none;
 }
 
+main a {
+    color: #422c24ff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+main a:hover {
+    color: #6a473b;
+    text-decoration-color: #6a473b;
+}
+
 hr{
     color: black;
     margin-top: 2em;
