@@ -1,12 +1,15 @@
-const path = window.location.pathname;
 
-let depth = "";
+// Disable iPhone Safari phone-number detection
+const meta = document.createElement("meta");
 
-if (path.includes("/rolling-stock/")) {
-    depth = "../";
-}
+meta.name = "format-detection";
+meta.content = "telephone=no";
 
-fetch(depth + "components/header.html")
+document.head.appendChild(meta);
+
+
+
+fetch("components/header.html")
     .then(response => response.text())
     .then(data => {
 
