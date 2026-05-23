@@ -16,6 +16,7 @@ fetch("components/header.html")
         document.getElementById("header-placeholder").innerHTML = data;
 
         initializeHeader();
+        initializeImageFallbacks();
 
     });
 
@@ -40,7 +41,7 @@ function initializeImageFallbacks() {
     const images = document.querySelectorAll("img");
     images.forEach(img => {
         img.addEventListener("error", () => {
-            img.src = "../MetroArchive/img/placeholder.jpg";
+            img.src = "img/placeholder.jpg";
         });
     });
 }
