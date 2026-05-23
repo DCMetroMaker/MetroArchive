@@ -41,7 +41,7 @@ function initializeImageFallbacks() {
     const images = document.querySelectorAll("img");
     images.forEach(img => {
         img.addEventListener("error", () => {
-            img.src = "img/placeholder.jpg";
+            img.src = "img/comingsoon.jpg";
         });
     });
 }
