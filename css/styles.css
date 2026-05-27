@@ -343,8 +343,8 @@ hr{
 
     gap: 20px;
 
-    margin-top: -0.5em;
-    margin-bottom: -0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     align-items: stretch;
 }
@@ -360,7 +360,7 @@ hr{
 
 /* Shared image area height */
 .image-grid-four .image-wrapper {
-    height: 240px;
+    height: 150px;
 
     display: flex;
 
