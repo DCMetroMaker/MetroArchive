@@ -14,7 +14,7 @@ body {
     background-color: #d9d9d9;
 }
 
-/* Font Stylesa */
+/* Font Styles */
 h1{
     font-size: 1.8em;
     color:black;
@@ -360,7 +360,7 @@ hr{
 
 /* Shared image area height */
 .image-grid-four .image-wrapper {
-    height: 150px;
+    height: 180px;
 
     display: flex;
 
