@@ -360,7 +360,8 @@ hr{
 
 /* Shared image area height */
 .image-grid-four .image-wrapper {
-    height: 1em;
+    height: auto;
+    width: 100%;
 
     display: flex;
 
