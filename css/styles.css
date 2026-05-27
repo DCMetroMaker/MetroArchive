@@ -387,6 +387,7 @@ hr{
 .image-grid-four figcaption {
     font-size: 0.88em;
     color: #6f6f6f;
+    margin-top: 0.75em;
     line-height: 1.35;
     text-align: center;
     min-height: 4.2em;
