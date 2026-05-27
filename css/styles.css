@@ -359,7 +359,8 @@ hr{
     }
 
     .image-grid-two,
-    .image-grid-three {
+    .image-grid-three,
+    .image-grid-four {
         grid-template-columns: 1fr;
     }
 
