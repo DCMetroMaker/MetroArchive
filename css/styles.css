@@ -132,7 +132,7 @@ hr{
     text-align: center;
 }
 
-.image-center img {
+.image-roster img {
     width: 100%;
     max-width: 1200px;
     object-fit: contain;
