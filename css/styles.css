@@ -132,6 +132,15 @@ hr{
     text-align: center;
 }
 
+.image-center img {
+    width: 100%;
+    max-width: 1200px;
+    object-fit: contain;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 /* ====================================================== */
