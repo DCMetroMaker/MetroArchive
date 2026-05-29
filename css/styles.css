@@ -55,6 +55,7 @@ main ul{
     list-style: none;
     padding-left: 1.8em;
     margin-top: 0.5em;
+    font-size: 0.9em;
 }
 
 main ul ul{
@@ -99,26 +100,18 @@ hr{
 /* CENTERED IMAGE */
 .image-center {
     width: 100%;
-
     margin-top: 1em;
     margin-bottom: 1em;
-
     text-align: center;
 }
 
 .image-center img {
     width: 100%;
-
     max-width: 850px;
-
     max-height: 520px;
-
     object-fit: contain;
-
     height: auto;
-
     display: block;
-
     margin: 0 auto;
 }
 
@@ -129,6 +122,14 @@ hr{
     line-height: 1.35;
     text-align: center;
     min-height: 4.2em;
+}
+
+/* ROSTER IMAGE */
+.image-roster {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 
