@@ -96,6 +96,10 @@ hr{
     margin-bottom: 2em;
 }
 
+img {
+  border: 1px solid #e5e5e5;
+}
+
 .image-wrapper {
   width: 300px;
   transition: transform 0.2s ease;
