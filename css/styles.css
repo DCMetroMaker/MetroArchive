@@ -96,12 +96,12 @@ hr{
     margin-bottom: 2em;
 }
 
-img {
+.image-wrapper {
   width: 300px;
   transition: transform 0.2s ease;
 }
 
-img:hover {
+.image-wrapper:hover {
   transform: scale(1.03);
 }
 
