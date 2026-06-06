@@ -484,7 +484,7 @@ hr{
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.92);
+    background: rgba(0,0,0,0.20);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,18 +507,19 @@ hr{
 }
 
 .lightbox-close {
-    position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 32px;
+    position: fixed;
+    top: 18px;
+    right: 28px;
+    font-size: 42px;
     line-height: 1;
-    color: #666;
+    color: white;
     cursor: pointer;
     user-select: none;
+    z-index: 10001;
 }
 
 .lightbox-close:hover {
-    color: #000;
+    color: #dddddd;
 }
 
 .lightbox-content {
