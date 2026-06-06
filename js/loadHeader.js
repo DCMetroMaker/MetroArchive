@@ -80,12 +80,10 @@ function initializeLightbox() {
                 caption.style.display = "none";
             }
             lightbox.classList.add("active");
-            document.body.style.overflow = "scroll";
         });
     });
     function closeLightbox() {
         lightbox.classList.remove("active");
-        document.body.style.overflow = "";
     }
     lightbox
         .querySelector(".lightbox-close")
