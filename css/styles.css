@@ -448,15 +448,15 @@ hr{
 
     .image-grid-two,
     .image-grid-three{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .image-grid-four{
-        grid-template-columns: 2fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .image-grid-six{
-        grid-template-columns: 3fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .media-figure {
