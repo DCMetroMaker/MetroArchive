@@ -428,9 +428,7 @@ hr{
 /* ====================================================== */
 /* MOBILE RESPONSIVE */
 /* ====================================================== */
-
 @media (max-width: 850px) {
-
     body {
         background-attachment: scroll;
     }
@@ -471,7 +469,6 @@ hr{
     .media-right {
         flex-direction: column-reverse;
     }
-
 }
 
 
@@ -488,16 +485,12 @@ hr{
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.92);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
     visibility: hidden;
-
     transition: opacity 0.2s ease;
-
     z-index: 10000;
 }
 
@@ -507,38 +500,38 @@ hr{
 }
 
 .lightbox img {
-    max-width: 92vw;
-    max-height: 85vh;
+    max-width: min(1200px, 90vw);
+    max-height: 80vh;
     object-fit: contain;
+    display: block;
+    border-radius: 6px;
 }
 
 .lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-
-    color: white;
-    font-size: 42px;
-    cursor: pointer;
-
-    line-height: 1;
+    align-self: flex-end;
+    color: #666;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
 .lightbox-content {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     max-width: 95vw;
     max-height: 95vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .lightbox-caption {
-    color: white;
-    margin-top: 12px;
-    font-size: 0.95em;
-    line-height: 1.4;
+    color: #444;
+    margin-top: 14px;
     text-align: center;
+    line-height: 1.5;
+    font-size: 0.9em;
     max-width: 900px;
 }
 
