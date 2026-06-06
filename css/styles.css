@@ -504,20 +504,25 @@ hr{
     max-height: 80vh;
     object-fit: contain;
     display: block;
-    border-radius: 6px;
 }
 
 .lightbox-close {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #555;
+    top: 8px;
+    right: 14px;
     font-size: 32px;
     line-height: 1;
+    color: #666;
     cursor: pointer;
+    user-select: none;
+}
+
+.lightbox-close:hover {
+    color: #000;
 }
 
 .lightbox-content {
+    position: relative;
     background: white;
     border-radius: 12px;
     padding: 18px;
@@ -530,6 +535,7 @@ hr{
 }
 
 .lightbox-caption {
+    display: none;
     color: #444;
     margin-top: 14px;
     text-align: center;
