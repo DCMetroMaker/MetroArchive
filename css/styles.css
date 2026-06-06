@@ -447,9 +447,16 @@ hr{
     }
 
     .image-grid-two,
-    .image-grid-three,
-    .image-grid-four {
+    .image-grid-three{
         grid-template-columns: 1fr;
+    }
+
+    .image-grid-four{
+        grid-template-columns: 2fr;
+    }
+
+    .image-grid-six{
+        grid-template-columns: 3fr;
     }
 
     .media-figure {
