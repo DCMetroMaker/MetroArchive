@@ -44,8 +44,9 @@ function createLightbox() {
     const lightbox = document.createElement("div");
     lightbox.className = "lightbox";
     lightbox.innerHTML = `
+        <span class="lightbox-close">&times;</span>
+    
         <div class="lightbox-content">
-            <span class="lightbox-close">&times;</span>
             <img class="lightbox-image" src="" alt="">
             <div class="lightbox-caption"></div>
         </div>
