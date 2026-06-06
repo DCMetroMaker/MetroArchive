@@ -68,12 +68,15 @@ function initializeLightbox() {
             lightboxImg.alt = img.alt || "";
             const figure = img.closest("figure");
             if (figure) {
-                const figcaption =
-                    figure.querySelector("figcaption");
-                caption.textContent =
-                    figcaption ? figcaption.textContent : "";
+                const figcaption = figure.querySelector("figcaption");
+                if (figcaption && figcaption.textContent.trim()) {
+                    caption.textContent = figcaption.textContent;
+                    caption.style.display = "block";
+                } else {
+                    caption.style.display = "none";
+                }
             } else {
-                caption.textContent = "";
+                caption.style.display = "none";
             }
             lightbox.classList.add("active");
             document.body.style.overflow = "hidden";
