@@ -46,7 +46,7 @@ function createLightbox() {
     lightbox.innerHTML = `
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content">
-            <img src="" alt="">
+            <img class="lightbox-image" src="" alt="">
             <div class="lightbox-caption"></div>
         </div>
     `;
@@ -60,7 +60,7 @@ function initializeLightbox() {
         lightbox.querySelector("img");
     const caption =
         lightbox.querySelector(".lightbox-caption");
-    document.querySelectorAll("img").forEach(img => {
+    document.querySelectorAll("img:not(.lightbox-image)").forEach(img => {
         // Ignore linked images
         if (img.closest("a")) return;
         img.addEventListener("click", () => {
