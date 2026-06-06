@@ -45,7 +45,10 @@ function createLightbox() {
     lightbox.className = "lightbox";
     lightbox.innerHTML = `
         <span class="lightbox-close">&times;</span>
-        <img src="" alt="">
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
     `;
     document.body.appendChild(lightbox);
     return lightbox;
@@ -53,20 +56,29 @@ function createLightbox() {
 
 function initializeLightbox() {
     const lightbox = createLightbox();
-    const lightboxImg = lightbox.querySelector("img");
+    const lightboxImg =
+        lightbox.querySelector("img");
+    const caption =
+        lightbox.querySelector(".lightbox-caption");
     document.querySelectorAll("img").forEach(img => {
-
         // Ignore linked images
         if (img.closest("a")) return;
-        img.style.cursor = "zoom-in";
         img.addEventListener("click", () => {
             lightboxImg.src = img.src;
             lightboxImg.alt = img.alt || "";
+            const figure = img.closest("figure");
+            if (figure) {
+                const figcaption =
+                    figure.querySelector("figcaption");
+                caption.textContent =
+                    figcaption ? figcaption.textContent : "";
+            } else {
+                caption.textContent = "";
+            }
             lightbox.classList.add("active");
             document.body.style.overflow = "hidden";
         });
     });
-
     function closeLightbox() {
         lightbox.classList.remove("active");
         document.body.style.overflow = "";
