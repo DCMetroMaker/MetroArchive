@@ -508,10 +508,13 @@ hr{
 }
 
 .lightbox-close {
-    align-self: flex-end;
-    color: #666;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #555;
     font-size: 32px;
-    margin-bottom: 8px;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .lightbox-content {
