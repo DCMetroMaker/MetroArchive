@@ -80,7 +80,7 @@ function initializeLightbox() {
                 caption.style.display = "none";
             }
             lightbox.classList.add("active");
-            document.body.style.overflow = "hidden";
+            document.body.style.overflow = "scroll";
         });
     });
     function closeLightbox() {
