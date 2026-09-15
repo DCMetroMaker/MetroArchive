@@ -545,7 +545,52 @@ hr{
     max-width: 900px;
 }
 
+/* LIGHTBOX ARROWS */
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
 
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+
+    cursor: pointer;
+
+    z-index: 1002;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lightbox-prev {
+    left: 25px;
+}
+
+.lightbox-next {
+    right: 25px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-prev:active,
+.lightbox-next:active {
+    transform: translateY(-50%) scale(0.95);
+}
 
 
 
@@ -804,3 +849,5 @@ main {
     min-height: 100vh;
     box-shadow: 0 0 18px rgba(0,0,0,0.10);
 }
+
+
