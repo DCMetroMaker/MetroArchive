@@ -39,7 +39,6 @@ function initializeImageFallbacks() {
 }
 
 
-
 function createLightbox() {
     const lightbox = document.createElement("div");
     lightbox.className = "lightbox";
@@ -54,6 +53,22 @@ function createLightbox() {
     document.body.appendChild(lightbox);
     return lightbox;
 }
+
+/*
+function createLightbox() {
+    const lightbox = document.createElement("div");
+    lightbox.className = "lightbox";
+    lightbox.innerHTML = `
+        <span class="lightbox-close">&times;</span>
+    
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    `;
+    document.body.appendChild(lightbox);
+    return lightbox;
+}*/
 
 function initializeLightbox() {
     const lightbox = createLightbox();
